@@ -1,3 +1,20 @@
-.p{
-	color:black;
+p{
+	color:Blue;
+}
+body{
+	background-color: White;
+}
+div{
+	border: 1px solid Chocolate;
+}
+.class{
+
+}
+.top-navigation {
+	background-color:#fff;
+}
+.top-navigation > .content { /*question nav > cont*/
+	width: 970px;
+	height: 70px
+	margin: 0 auto; /* first is top bottom second auto is left and right margin*/
 }
