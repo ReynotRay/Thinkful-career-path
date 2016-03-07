@@ -1,12 +1,15 @@
-p{
-	color:Blue;
+h1 {
+	color:red;
+}
+p {
+	color:red;
 }
 body{
 	background-color: White;
 }
 div{
 	border: 1px solid Chocolate;
-}
+}/*
 .class{
 
 }
