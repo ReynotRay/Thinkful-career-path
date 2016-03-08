@@ -6,10 +6,10 @@ p {
 }
 body{
 	background-color: White;
-}
+}*/
 div{
-	border: 100px solid Chocolate;
-}
+	border: 1px solid Chocolate;
+}/*
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -17,12 +17,12 @@ ul {
 	overflow: hidden;
 	width: 5em;
 	background-color: #F1F1F1;
-}
+}*/
 li{
 	text-align: center;
 	display: inline;
 	float: left;
-}
+}/*
 li a {
     display: block;
     color: #000;
@@ -49,7 +49,11 @@ li a:hover {
 	/*width: 970px;
 	height: 70px
 	margin: 0 auto; //* first is top bottom second auto is left and right margin*/
-
+.top-navigation{
+	position:fixed;
+	width: 100%;
+	z-index: 9999;
+}
 .top-navigation .links {
     float: right;
     font-family: 'Roboto', sans-serif;
@@ -69,4 +73,38 @@ li a:hover {
 .top-navigation .links li:hover {
     cursor: pointer;
     color: #333333;
+}
+.introduction {
+    background-image: url('http://i1077.photobucket.com/albums/w464/reygarcia718/unspecified_zps9xaieg0a.jpeg?t=1457371726');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+}
+<section class="introduction">
+    <div class="content">
+        <h1>Introducing Karma</h1>
+        <h3>Bring WiFi with you, everywhere you go.</h3>
+        <button>Learn More</button>
+    </div>
+</section>
+button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+font-size: 16px;
+color: #838994;
+letter-spacing: 0.03em;
+}
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
 }
