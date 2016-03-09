@@ -1,4 +1,11 @@
-/*h1 {
+
+
+
+
+/*body, introduction, botton, div, li, top-navigation, cases, devices
+
+
+h1 {
 	color:red;
 }
 p {
@@ -30,6 +37,10 @@ li{
 	text-align: center;
 	display: inline;
 	float: left;
+}
+img {
+	width:127; 
+	height:127;
 }
 img .logo {
 margin-left: 
@@ -137,7 +148,7 @@ button {
 	/*height:20px; 
     width:100px;*/
     top:50%; 
-    left:44%; /*QUESTION what can i do to align center*/
+    left:42%; /*QUESTION what can i do to align center*/
 	position:relative;
  	width:9.688rem;
     background-color: #F12A29;
