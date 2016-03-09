@@ -1,36 +1,68 @@
+/*body, introduction, button, div, li, top-navigation, cases, devices
 
 
-
-
-/*body, introduction, botton, div, li, top-navigation, cases, devices
-
-
-h1 {
-	color:red;
-}
-p {
-	color:red;
-}
-body{
-	background-color: White;
 }*/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	/*color: #838994;*/
+	color: white;
+	letter-spacing: 0.03em;
+	background-color: white;
+}	
+.introduction h1{
+	margin-top: 17.5rem;
+    font-size: 3.125rem;
+    color:white;
+}
+.introduction {
+    background-image: url('http://i1077.photobucket.com/albums/w464/reygarcia718/unspecified_zps9xaieg0a.jpeg?t=1457371726');
+    background-position: center bottom;
+    width: 60em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow:auto;
+	}	
+.introduction h1, .introduction h3 {
+	text-align: center;
+	font-weight: 300;
+	color:white;
+}
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+.introduction .buttons {
+	color:white;
+	text-align: center;
+	margin-top: 1.563rem;
+}
+
+button {
+	/*height:20px; 
+    width:100px;*/
+    top:50%; 
+    left:42%; /*QUESTION what can i do to align center*/
+	position:relative;
+ 	width:9.688rem;
+    background-color: #F12A29;
+    border-color: #F12A29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    color:white;
+    font-size: 1.125rem;
+	}
+
+
+
 div{
 	border: 1px solid Chocolate;
 }
 
-.top-navigation .logo{
-height: 4.735rem;
-}/*
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	width: 5em;
-	background-color: #F1F1F1;
-}*/
-.top-navigation .links {
-	float:right;
+
 
 }
 li{
@@ -38,41 +70,14 @@ li{
 	display: inline;
 	float: left;
 }
-img {
-	width:127; 
-	height:127;
-}
-img .logo {
-margin-left: 
-}
-/*
-li a {
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 8px 0 8px 16px;
-    width: 60px;
-}
-li a:hover {
-	background-color:#555;
-	color: white;
-}
-.active {	
-	background-color: #4CAF50;
-	color:white;
-}
 
-.class{
-
+.top-navigation .logo{
+	height: 4.735rem;
+}/*
+*/
+.top-navigation .links {
+	float:right;
 }
-.top-navigation {
-	background-color:#fff;
-}*/
-/*.top-navigation > .content { /*question nav > cont*/
-	/*width: 970px;
-	height: 70px
-	margin: 0 auto; //* first is top bottom second auto is left and right margin*/
-}/
 .top-navigation {
 	background-color: #fff;
 	position:fixed;
@@ -99,23 +104,20 @@ li a:hover {
     cursor: pointer;
     color: #333333;
 }
-.introduction {
-    background-image: url('http://i1077.photobucket.com/albums/w464/reygarcia718/unspecified_zps9xaieg0a.jpeg?t=1457371726');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45.938rem;
-    overflow:auto;
+img {
+	width:127; 
+	height:127;
 }
+img .logo {
+margin-left: 
+}
+/*
+*/
+}/
+
 
 }
-body{
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	/*color: #838994;*/
-	color: white;
-	letter-spacing: 0.03em;
-	background-color: white;
+
 }
 .cases .devices {
     width: 33.3333333%;
@@ -125,48 +127,13 @@ body{
     box-sizing: border-box;
     height: 4em;
 }
-.introduction h1{
-	margin-top: 17.5rem;
-    font-size: 3.125rem;
-    color:white;
-}
-.introduction h1, .introduction h3 {
-	text-align: center;
-	font-weight: 300;
-	color:white;
-}
-.introduction h3 {
-	margin-top: 1.25rem;
-	font-size: 1.563rem;
-}
-.introduction .buttons {
-	color:white;
-	text-align: center;
-	margin-top: 1.563rem;
-}
-button {
-	/*height:20px; 
-    width:100px;*/
-    top:50%; 
-    left:42%; /*QUESTION what can i do to align center*/
-	position:relative;
- 	width:9.688rem;
-    background-color: #F12A29;
-    border-color: #F12A29;
-    text-shadow: none;
-    border-style: none;
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
-    color:white;
-    font-size: 1.125rem;
- }
- .cases h2{
+.cases h2{
  	font-size: 2.75rem;
  	margin: 1.625rem 0 3.125rem;
  	font-weight: 300; 
 	text-align:center;
- }
- .cases {
+}
+.cases {
  background-color:#fff;
  overflow: hidden;
  padding-bottom: 5rem;	
@@ -189,7 +156,8 @@ button {
 	min-width: 37.5rem;
 }
 .social{
-	background-color:#fff;
+	background-color:white;
+	color:black;
 	overflow: auto;
 	padding-bottom: 9.375rem;
 	text-align: center;
