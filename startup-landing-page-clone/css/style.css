@@ -1,20 +1,18 @@
-/*body, introduction, button, div, li, top-navigation, cases, devices
 
-
-}*/
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	/*color: #838994;*/
 	color: white;
 	letter-spacing: 0.03em;
 	background-color: white;
 }	
+
 .introduction h1{
 	margin-top: 17.5rem;
     font-size: 3.125rem;
     color:white;
 }
+
 .introduction {
     background-image: url('http://i1077.photobucket.com/albums/w464/reygarcia718/unspecified_zps9xaieg0a.jpeg?t=1457371726');
     background-position: center bottom;
@@ -23,16 +21,19 @@ body {
     background-size: cover;
     height: 45.938rem;
     overflow:auto;
-	}	
+}
+
 .introduction h1, .introduction h3 {
 	text-align: center;
 	font-weight: 300;
 	color:white;
 }
+
 .introduction h3 {
 	margin-top: 1.25rem;
 	font-size: 1.563rem;
 }
+
 .introduction .buttons {
 	color:white;
 	text-align: center;
@@ -40,8 +41,6 @@ body {
 }
 
 button {
-	/*height:20px; 
-    width:100px;*/
     top:50%; 
     left:42%; /*QUESTION what can i do to align center*/
 	position:relative;
@@ -54,17 +53,12 @@ button {
     padding: 1rem 1.5rem;
     color:white;
     font-size: 1.125rem;
-	}
-
-
+}
 
 div{
 	border: 1px solid Chocolate;
 }
 
-
-
-}
 li{
 	text-align: center;
 	display: inline;
@@ -73,17 +67,19 @@ li{
 
 .top-navigation .logo{
 	height: 4.735rem;
-}/*
-*/
+}
+
 .top-navigation .links {
 	float:right;
 }
+
 .top-navigation {
 	background-color: #fff;
 	position:fixed;
 	width: 100%;
 	z-index: 9999;
 }
+
 .top-navigation .links {
     float: right;
     font-family: Roboto, sans-serif;
@@ -92,40 +88,39 @@ li{
     margin-top: 25px;
     -webkit-font-smoothing: antialiased;
 }
+
 .top-navigation .links li {
     display: inline-block;
     margin-left: 25px;
 }
+
 .top-navigation .links .active {
     color: #4c5058;
     font-weight: 500;
 }
+
 .top-navigation .links li:hover {
     cursor: pointer;
     color: #333333;
 }
+
 img {
 	width:127; 
 	height:127;
 }
+
 img .logo {
-margin-left: 
-}
-/*
-*/
-}/
-
-
+margin:left; 
+}/*how and why when deleted moves logos*/ 
 }
 
-}
 .cases .devices {
     width: 33.3333333%;
     display: inline-block;
-    /* styles to assist with debugging */
     border: 1px solid black;
     box-sizing: border-box;
     height: 4em;
+
 }
 .cases h2{
  	font-size: 2.75rem;
@@ -133,28 +128,30 @@ margin-left:
  	font-weight: 300; 
 	text-align:center;
 }
+
 .cases {
  background-color:#fff;
  overflow: hidden;
  padding-bottom: 5rem;	
- }
- .cases .content {
+}
+
+.cases .content {
  	margin-top: 7.875rem;
  	color:black;
  	text-align: center;
- }
- .cases .devices > li {
+}
+
+.cases .devices > li {
  	width:33.33333%;
  	float: left;
- }
-/*section above is middle*/
+}
 
-/*footer is next section*/
 .content {
 	width: 60%;
 	padding:.948rem;
 	min-width: 37.5rem;
 }
+
 .social{
 	background-color:white;
 	color:black;
@@ -162,25 +159,17 @@ margin-left:
 	padding-bottom: 9.375rem;
 	text-align: center;
 }
+
 .social .content {
 	text-align: center;
 }
+
 .social .content .icon {
 	text-align: center;
 }
+
 .social hr {
 	border:0;
 	border-top: 1px solid #eaebec;
 	margin: 1.313rem;
-}
-
-
-
-/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin:0;
-	padding:0;
-	border:0;
-	font: inherit;
-	vertical-align: baseline;
-	box-sizing: border-box;
 }
