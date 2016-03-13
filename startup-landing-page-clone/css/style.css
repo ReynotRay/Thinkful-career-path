@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	color: white;
+	color: black;
 	letter-spacing: 0.03em;
 	background-color: white;
 }	
@@ -37,14 +37,12 @@ body {
 	color:white;
 	text-align: center;
 	margin-top: 1.563rem;
+	
 }
 
 button {
-   
-    left:42%; /*QUESTION what can i do to align center*/
 	position:relative;
- 	width:9.688rem;
-    background-color: #F12A29;
+ 	background-color: #F12A29;
     border-color: #F12A29;
     text-shadow: none;
     border-style: none;
@@ -52,13 +50,15 @@ button {
     padding: 1rem 1.5rem;
     color:white;
     font-size: 1.125rem;
+    width:9.688rem;
+    position:relative;
 }
 
 div{
 	border: 1px solid transparent;
 }
 
-li{
+.links li{
 	text-align: center;
 	display: inline;
 	float: left;
@@ -72,6 +72,7 @@ li{
 	background-color: #fff;
 	position:fixed;
 	width: 100%;
+	border-bottom: 1px solid#; 
 	z-index: 9999;
 }
 
@@ -105,10 +106,11 @@ img {
 img .logo {
 	margin:left; 
 }
+
 .img {
 	width:527; 
 	height:127;
-}/*complex code, alignment of devices changes*/ 
+}
 }
 .cases .devices {
     width: 33.3333333%;
@@ -116,8 +118,8 @@ img .logo {
     border: 1px solid black;
     box-sizing: border-box;
     height: 4em;
-
 }
+
 .cases h2{
  	font-size: 2.75rem;
  	margin: 1.625rem 0 3.125rem;
@@ -140,30 +142,54 @@ img .logo {
 .cases .devices > li {
  	width:33.33333%;
  	float: left;
+ 	display: inline-block;
 }
 
 .content {
 	padding:.948rem;
 }
 
-.social {
-	background-color:white;
-	color:black;
-	overflow: auto;
-	padding-bottom: 9.375rem;
-	text-align: center;
+hr{
+	border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
 }
 
-.social .content {
-	text-align: center;
-}
-
-.social .content .icon {
-	text-align: center;
-}
-
-.social hr {
+h5 {
 	border:0;
-	border-top: 1px solid #eaebec;
 	margin: 1.313rem;
+	text-align: center;
+}
+
+h4 {
+	
+	text-align: center;
+}
+
+body h5{
+	text-align:center;
+}
+
+body h3 {
+	text-align: center;
+}
+
+.copy {
+	text-align: right;
+}
+
+.breadcrumb {
+	font: 18px;
+	margin-left: -36px;
+}
+.breadcrumb li {
+	display: inline-block;
+}
+
+.social{
+	text-align: center;
+}
+
+.social .twitter {
+	color:#55acee;
 }
