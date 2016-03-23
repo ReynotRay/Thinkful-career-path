@@ -112,9 +112,6 @@ body h3 {
 .copy {
     text-align: right;
 }
-.social hr {
-    font-size: 20px;
-}
 .breadcrumb {
     padding-right: 40px;
     text-align: center;
@@ -147,4 +144,7 @@ body h3 {
 }
 .breadcrumb a:hover {
     color: blue;
+}
+.social {
+    background-color: lightblue;
 }
