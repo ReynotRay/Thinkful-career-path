@@ -115,7 +115,7 @@ font-size:24px;
     background-color: #ffff00;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
-    .button3
-    {
-        
-    }
+
+.image-plus {
+    display: none;
+}
