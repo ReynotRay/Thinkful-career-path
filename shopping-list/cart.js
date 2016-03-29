@@ -1,39 +1,39 @@
 $(document).ready(function() {
-	 	$('.item1').mouseenter(function() {
-        $('.price').hide();
-        $('.image-plus').show();
+	 	   $('.image1').mouseenter(function() {
+        $('.image-plus1').show();
    		});
-
-	  	$('.item1').mouseleave(function() {
-        $('.image-plus').hide();
-        $('.price').show();
+	  	$('.image1').mouseleave(function() {
+        $('.image-plus1').hide();
        	});
+      $('.image2').mouseenter(function() {
+        $('.image-plus2').show();
+      });
+      $('.image2').mouseleave(function() {
+        $('.image-plus2').hide();
+        });
+       $('.image3').mouseenter(function() {
+        $('.image-plus3').show();
+      });
+      $('.image3').mouseleave(function() {
+        $('.image-plus3').hide();
+        });
+       $('.image4').mouseenter(function() {
+        $('.image-plus4').show();
+      });
+      $('.image4').mouseleave(function() {
+        $('.image-plus4').hide();
+        });
+      $('.cart').mouseenter(function() {
+        $('.image-plus1').hide();
+      });
 
-   		$('.list').on('click', 'li', function(event) {
+   		$('.list').on('click','li', function(event) {
         $(".cart").append($(this));
+        $('.remove').show();
     	});
-
+      });
 		$('.cart').on('click','li', function(event) {
-     	$(".list").append($(this));
+     $(".list").append($(this));
+      $('.remove').hide();
 		});
-
-  	  	$('.cart').mouseenter(function() {
-        $('.image-plus').hide();
-        $('.delete').show();
-  		});
-
-  	    $('.cart').mouseleave(function() {
-        $('.delete').hide();
-        $('.price').show();
-		}); 
-  	
-  		$(".checkout").click(function(){
-        alert("Awesome choice!");
-  		});
-  	 });
-
- 
-
- 
-	// 		<li class="items"><div class="box"></div><span>Chicken</span><img class="delete" src='images/delete.png'/></li>
-//would like to create button to remove shopping cart
+      

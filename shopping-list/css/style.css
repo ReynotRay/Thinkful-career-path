@@ -1,7 +1,9 @@
 html {}
 
 body {}
-
+.img{
+    display: none;
+}
 .container {
     width: 1200px;
     margin-left: auto;
@@ -15,7 +17,12 @@ body {}
     margin-top: 50px;
     border-radius: 17px;
 }
-
+.remove{
+    font-size: 21px;
+    color: red;
+    margin-left: 34px;
+    display: none;
+}
 .cart,
 .cart-title {
     padding: 20px 0 20px 0;
@@ -31,7 +38,7 @@ font-size:24px;
     width: 760px;
 }
 
-.list li {
+.list li, .item1 {
     width: 350px;
     margin-right: 10px;
     float: left;
@@ -40,7 +47,7 @@ font-size:24px;
 .list li h1 {
     text-align: center
 }
-.list li .image {
+.list li .image1 {
     background: #afafaf;
     display: block;
     width: 95%;
@@ -101,14 +108,14 @@ font-size:24px;
     background-color: #ffffb3;
     border: none;
     color: black;
-    padding: 15px 32px;
+    padding: 15px 24px;
     text-align: center;
     border-radius: 9px;
     text-decoration: none;
     display: inline-block;
     font-size: 23px;
     transition-duration: 0.4s;
-    /* padding-left: 10px; */
+   
     margin-left: 20px;
 }
 .checkout:hover{
@@ -116,6 +123,12 @@ font-size:24px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     }
 
-.image-plus {
+.image-plus1, .image-plus2, .image-plus3, .image-plus4 {
     display: none;
+    width: 20px;
+}
+
+/*.image-delete1, .image-delete2, .image-delete3, .image-delete4 {
+    display: none;
+    width: 20px;
 }
