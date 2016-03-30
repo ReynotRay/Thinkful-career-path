@@ -1,0 +1,86 @@
+body {
+	font-family: 'cutie-patootie';
+	background-image:url('http://p1.pichost.me/i/37/1601927.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.container {
+	width: 650px;
+	margin: 150px auto;
+}
+.input {
+    width: 654px;
+    text-align: center;
+    background-image: url('http://professionalpads.com/images/yellow-copper-litigation-pads-700.gif');
+}
+h1 {
+	margin-top: -17px;
+    padding-top: 20px;
+    font-size: 48px;
+    margin-bottom: 10px;
+    margin-left: 31px;
+}
+#item {
+	margin-top: 8px;
+	height: 20px;
+	width: 200px;
+	vertical-align: center;
+
+}
+button {
+	height: 24px;
+	width: 24px;
+	background: none;
+	font-size: 18px;
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 0 0 4px 0;
+
+}
+h2 {
+	font-size: 22px;
+	margin: 4px 0 0 0;
+}
+#list {
+	margin-top: 0;
+	padding: 5px 5px 5px 15px;
+	text-align: left;
+	list-style: none;
+}
+#list li {
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+}
+span {
+	margin: 0;
+}
+
+.box {
+	float: left;
+	margin-top: 3px;
+	margin-right: 30px;
+	height: 17px;
+	width: 17px;
+	background: url('images/box_Sprite.png') 0 0;
+
+}
+.Checked {
+	height: 18px;
+	background: url('images/box_Sprite.png') 17px 0;
+}
+.strike {
+	text-decoration: line-through;
+}
+.delete {
+	float: right;
+	margin-top: 3px;
+	display: none;
+	width: 20px;
+}
+.show {
+	display: inline;
+}
+
+
+/*comment*/
