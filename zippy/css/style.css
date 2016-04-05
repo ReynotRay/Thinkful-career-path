@@ -1,0 +1,184 @@
+@import  "https://fonts.googleapis.com/css?family=Istok+Web:400,700";
+
+body {
+    color: #000;
+}
+
+html {
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.header {
+    font-family: 'Istok Web',sans-serif;
+    width: 100%;
+    background-color: gray;
+    height: 400px;
+    background-image: url(http://mtprinceton.org/sunset-mount-princeton-2014.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.header .nav p {
+}
+
+.nav {
+}
+
+.nav-logo {
+    width: 150px;
+    margin-left: 25%;
+}
+
+.nav-menu {
+    width: 40%;
+    float: right;
+    letter-spacing: 2px;
+
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.home {
+    color: #ff0;
+}
+
+.header-content {
+    width: 500px;
+    margin-left: 25%;
+    margin-top: 60px;
+}
+
+.header-content h1 {
+    font-size: 34px;
+    color: #fff;
+}
+
+.header-content p {
+    font-weight: 700;
+    color: #8c8c8c;
+}
+
+.header-content button {
+    background-color: #ffcc00;
+    color: #000;
+    margin-top: 10%;
+    border-color: #ffcc00;
+    border-radius:12px;
+    
+    
+}
+
+/*header ends*/
+.main-content {
+        /* margin-left: 0%; */
+    margin-top: 4%;
+    /* margin-right: 121px; */}
+
+.welcome {
+    text-align: center;
+    font-family: 'Istok Web',sans-serif;
+}
+
+.main-content p {
+    float: left;
+    font-size: 25px;
+    width: 27%;
+    margin-left: 25%;
+    color: #8c8c8c;
+}
+
+.main-content .main-img {
+    width: 184px;
+    margin-left: 50px;
+}
+
+.widget-wrapper {
+    margin-top: 12%;    
+}
+
+.widget {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+ 
+}
+
+.widget i {
+    color: #fff;
+    background-color: purple;
+    border-radius: 50%;
+    font-size: 100px;
+    padding:9%;
+}
+
+.widget h5 {
+    font-size: 22px;
+}
+
+.widget ul {
+    list-style: none;
+    margin-right: 40px;
+    color: #8c8c8c;
+}
+
+.widget li {
+    font-size: 20px;
+}
+
+.widget button {
+    background-color: #ffcc00;
+    border-radius: 8px;
+    font-size: 30px;
+    border-color: #ffcc00;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+hr {
+    margin-top: 4%;
+    width: 79%;
+
+}
+
+.footer {
+    background-color: #666;
+    margin-top: 10%;
+}
+
+.footer .zippy {
+    margin-left: 25%;
+    font-size: 27px;
+    color: #fff;
+    font-family: Arial;
+    font-weight: 700;
+}
+
+.footer img {
+}
+
+.footer .icons {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 40px;
+}
+
+.footer i {
+}
+
+.footer .copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}

@@ -1,0 +1,23 @@
+body {
+}
+
+.widget-wrapper {
+	display:none;
+}
+.main-img {
+	display:none;
+}
+.main-content p {
+	margin-left: 40%;
+}
+
+.header-content button {
+	display:none;
+}
+
+@media screen and (max-width: 500px) {
+	div.widget {
+		float: none;
+
+	} 
+}

@@ -1,8 +1,10 @@
 $(document).ready(function() {
-    $('.slist-add').keyup(function(event) {
+    $('.wrap-input').keyup(function(event) {
         if (event.keyCode == 13) {
-            event.preventDefault();
-            $('slist').click();
+            $('.slist').append('<li>' + $('.slist-input').val() +
+                '</li>');
+         
+            
         };
     });
     $('.slist-add').click(function() {
@@ -15,15 +17,8 @@ $(document).ready(function() {
         $(this).css('text-decoration', 'line-through');
     });
     //remove items from slist
-    $('.slist').on('click', '.delete', function(e) {
-        e.preventDefault();
-        $(this).parent().remove()
+    $('.items').on('click', '.delete', function() {
+        $(this).parent().fadeOut(300)
     });
-    //shows delete button
-    $('.slist').on('mouseenter', 'li', function() {
-        $(this).children('.delete').toggleClass('show');
-    });
-    $('.slist').on('mouseleave', 'li', function() {
-        $(this).children('.delete').toggleClass('show');
-    });
+
 });
