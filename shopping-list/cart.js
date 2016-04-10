@@ -3,8 +3,6 @@ $(document).ready(function() {
         if (event.keyCode == 13) {
             $('.slist').append('<li>' + $('.slist-input').val() +
                 '</li>');
-         
-            
         };
     });
     $('.slist-add').click(function() {
