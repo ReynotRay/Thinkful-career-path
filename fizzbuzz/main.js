@@ -12,13 +12,10 @@ $(document).ready(function() {
 		} else {
 			$('span').append('Input must be an integer.');
 		}
-		//option esure number is under 4000
-
 	});
 });
  var appendFizzBuzz = function (n) {
 	for (var i = 1; i <= n; i++) {
-
 		if (i % 15 === 0) {
 			$('section').append('FizzBuzz');
 		} else if (i % 3 === 0) {
