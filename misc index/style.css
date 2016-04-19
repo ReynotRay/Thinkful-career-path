@@ -1,0 +1,27 @@
+body{
+	background-color: blue;
+}
+
+.container {
+	width:400px;
+	margin: auto;
+}
+.start-button {
+	width: 400px;
+	height:200px;
+	margin:auto;
+	margin-top: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+.start-button:hover {
+	background-color: gray;
+	cursor: pointer;
+
+}
+.game {
+	margin-top: 20px;
+    margin-left: 69px;
+	display: none;
+}
