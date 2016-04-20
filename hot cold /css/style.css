@@ -56,7 +56,9 @@ body{
 	display: none;
 	margin-top: 20px;
 }
-
+.guess-button {
+    margin-top: 20px;
+}
 .input-number {
     background-color: #50597B;
     border-color: #50597B;
@@ -64,11 +66,21 @@ body{
     text-align: center;
     color:white;
 }
-
 #feedback-message {
 	text-align: center;
     color: white;
     text-transform: uppercase;
     font-size: 32px;
-
+}
+.numbers {
+    width: 400px;
+    height: 45px;
+    margin: auto;
+    background-color: #11A8AB;
+    border-radius: 10px;
+}
+#guessList {
+    color:black;
+    text-align: center;
+    margin-right: 40px;
 }

@@ -2,8 +2,7 @@
 var passGuesses =[];
 
 $(document).ready(function(){
-
-	$('.start-button').click(function() {
+ 	$('.start-button').click(function() {
 		$('.game')
 		.css('display','block');
 		$('.start-button').hide();
@@ -12,9 +11,9 @@ $(document).ready(function(){
 		var userGuessedNumber = $('.input-number') .val();
 		guessTheNumber(userGuessedNumber);
 	});
-	$('.reset').click(function() {
-    location.reload();
-});
+		$('.reset').click(function() {
+    	location.reload();
+	});
 });
 	
 function guessTheNumber(guessedNumber) {
@@ -27,7 +26,7 @@ function guessTheNumber(guessedNumber) {
 		$('.guess-message').text('Winner!!!!');
 
 	}	else {
-		$('.guess-message').text('keep guessing');
+		$('.guess-message').text('keep guessing!!!');
 	}
 		//if number is not an integer
   	if(guessedNumber % 1 !== 0){
@@ -41,7 +40,7 @@ function guessTheNumber(guessedNumber) {
   		}
   		//generate feedback
   	if(randomNumber == guessedNumber){
-		$('#feedback-message').text('winner-feedback');
+		$('#feedback-message').text('winner!!!');
 	}
   	else if ((randomNumber - guessedNumber) < 5){
 		$('#feedback-message').text('hot');
