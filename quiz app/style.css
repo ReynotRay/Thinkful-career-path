@@ -1,0 +1,13 @@
+body{
+	background-color: blue;
+}
+
+#main-header {
+	width: 800px;
+	background-color: white;
+}
+
+#main-content {
+	width:800px;
+	background-color: white;
+}
