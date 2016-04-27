@@ -7,36 +7,45 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
      <script type="text/javascript" src="js/script.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body>
-<div id="intro"><h1>Skyline Quiz</h1>
-<button id="start">Play Game</button>
-</div>
-    <p id="top-question">Where is this located?</p>
-    <div id="main-header"></div>
+    <div id="intro"><h1>Skyline Quiz</h1>
+    <button id="start">Play Game</button>
+    </div>
+        <div id="top-question">
+            <h1 id="firstQuestion">Where is this located</h1>
+            <h1 id="secondQuestion">What Country is this located</h1>
+            <h1 id="thirdQuestion">Northern or Southern Hemisphere</h1>
+            <h1 id="fourthQuestion">Where is this located?</h1>
+            <h1 id="fifthQuestion">What professional team plays here</h1></div>
+        <div id="main-header">
+        <img src="http://cdn.citylab.com/media/img/citylab/legacy/2012/08/22/shutterstock_84639565.jpg"/>
+    </div>
     <section id="main-section">
-        <div class="answers">
-            <div class="answer">
-                <h3>Miami</h3>
+        <ul class="answers">
+            <li><h3 class="miami">Miami</h3></li>
+            <li><h3 class="chicago">Chicago</h3></li>
+            <li><h3 class="japan">Japan</h3></li>
+            <li><h3 class="china">China</h3></li>
+            </ul>
+    </section>
+            <div class="div-submit">  
+                <button id="submit">
+                <i class="fa fa-forward" aria-hidden="true">
+                </i>
+                </button>    
+            </div>       
+            <div class="progress">
+              <ul class="progress-circle">
+              <li class="1">1</li>
+              <li class="2">2</li>
+              <li class="3">3</li>
+              <li class="4">4</li>
+              <li class="5">5</li>
+              </ul>  
             </div>
-        </div>
-        <div class="answers">
-            <div class="answer">
-                <h3>New York</h3>
-            </div>
-        </div>
-        <div class="answers">
-            <div class="answer">
-                <h3>Chicago</h3>
-            </div>
-        </div>
-        <div class="answers">
-            <div class="answer">
-                <h3>Los Angeles</h3>
-            </div>
-        </div>
-        </section>
         <footer class="footer">copyright 2016</footer>
-    <script src="script.js"></script> 
+    
 </body>
 </html>

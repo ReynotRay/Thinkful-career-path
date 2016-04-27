@@ -39,13 +39,30 @@ h1 {
   	-ms-transition:.7s;
   	-moz-transition:.7s;
   	-webkit-transition:.7s;
+    cursor: pointer;
+}
+
+#top-questtion {
+
+}
+
+#firstQuestion, #secondQuestion, #thirdQuestion,#fourthQuestion, #fifthQuestion {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-color: #445155;
+    width: 68%;
+    margin: auto;
+    border-radius: 3px;
+    height: 50px;
+    padding-top: 10px;
+    display: none;
+    width: 800px;
 }
 
 #main-header {
 	width: 580px;
     background-color: #D86960;
-    background-image: url('http://cdn.citylab.com/media/img/citylab/legacy/2012/08/22/shutterstock_84639565.jpg');
-    background-position: center;
     margin: auto;
     display: block;
     background-repeat: no-repeat;
@@ -56,53 +73,100 @@ h1 {
     display: none;
 }
 
+#main-header img {
+    padding-left: 37px;
+    padding-top: 14px;
+}
+
 #main-section {
 	text-align: center;
 	display:none;
 
 }
 
-#top-question {
-	text-align: center;
-    color: white;
-    font-size: 35px;
-    background-color: #445155;
-    width: 68%;
-    margin: auto;
-    border-radius: 3px;
-    height: 50px;
-    padding-top: 10px;
-    display: none;
-    width: 800px;
-}
+
 .answers {
-	display: inline-block;
+    width:800px;
+    margin: auto;
+}
+.answers li {
+    display: inline-block;
+    margin: auto;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.answers h3{
+	
     width: 130px;
     height: 130px;
     background: #028F76;
-    -moz-border-radius: 65px;
-    -webkit-border-radius: 65px;
     border-radius: 65px;
     color: white;
     text-align: center;
     margin: 10px;
+    list-style-type: none;
+    line-height: 122px;
    
 }
-.answer h3 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: normal;
-    margin-top: 49px;
-    text-transform: none;
-   
-}
-.answers:hover{
+
+.answers h3:hover{
 	background-color: #445155;
 	-o-transition:.5s;
   	-ms-transition:.5s;
   	-moz-transition:.5s;
   	-webkit-transition:.5s;
+    cursor: pointer;
+    }
+.div-submit {
+    text-align: center;
+    display: none;
 }
+#submit {
+
+    padding: 8px;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    cursor: pointer;
+}
+.progress {
+    width: 700px;
+    margin: auto;
+    display: none;
+ 
+}
+.progress-circle {
+    margin-top: 30px;
+    text-align: center;
+        margin-left: -40px;
+}
+.progress-circle li {
+    color: black;
+    display: inline;
+    background-color: white;
+    font-size: 32px;
+    border-radius: 14px;
+    margin: 12px;
+    padding: 10px;
+
+}
+
 .footer {
     color: white;
     text-align: center;
