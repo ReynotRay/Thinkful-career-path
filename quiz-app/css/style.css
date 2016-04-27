@@ -1,5 +1,7 @@
 body{
 background: radial-gradient(ellipse at center, rgb(79, 100, 126) -45%,rgb(30, 54, 63) 32%,rgb(4, 19, 3) 89%);
+width: 100%;
+font-family:'Open Sans', sans-serif;
 }
 
 #intro	{
@@ -88,7 +90,7 @@ h1 {
 }
 .answer h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     margin-top: 49px;
     text-transform: none;
@@ -100,4 +102,9 @@ h1 {
   	-ms-transition:.5s;
   	-moz-transition:.5s;
   	-webkit-transition:.5s;
+}
+.footer {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
 }
