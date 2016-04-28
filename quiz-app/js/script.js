@@ -8,18 +8,16 @@ $(document).ready(function() {
 		$('#header-image').fadeIn('slow');
 		$('#chicago').fadeIn('slow');
 		$('#main-section').fadeIn('slow');
+		$('.answers1').fadeIn('slow');
 		$('.div-submit').fadeIn('slow');
 		$('.progress').fadeIn('slow');
 		
 	})
-	$('.chicago').click(function(){
-		console.log('youre right');
-
+	$('#chicago').click(function(){
+		$('#chicago').hide();
+		$('#new-york').fadeIn('slow');
 	})		
 
-
-
-	
 });
 	// var points = 0
 	// var failed =[]
@@ -32,7 +30,7 @@ $(document).ready(function() {
 function checkAnswer(question,answer){
 console.log('in checkAnswer' + question + '' + answer);
  if(question =='q1' && answer =='Chicago') {
- 	console.log('youre right');
+ 	alert('youre right');
  }
 
 };
