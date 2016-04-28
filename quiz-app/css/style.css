@@ -60,7 +60,7 @@ h1 {
     width: 800px;
 }
 
-#main-header {
+#header-image {
 	width: 580px;
     background-color: #D86960;
     margin: auto;
@@ -71,11 +71,13 @@ h1 {
     border-radius: 5px;
     margin-top: 16px;
     display: none;
+    
 }
 
-#main-header img {
+#header-image img {
     padding-left: 37px;
     padding-top: 14px;
+    display: none;
 }
 
 #main-section {

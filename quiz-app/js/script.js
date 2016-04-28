@@ -5,7 +5,8 @@ $(document).ready(function() {
 	$('#start').click(function(){
 		$('#intro').hide();
 		$('#firstQuestion').fadeIn('slow');
-		$('#main-header').fadeIn('slow');
+		$('#header-image').fadeIn('slow');
+		$('#chicago').fadeIn('slow');
 		$('#main-section').fadeIn('slow');
 		$('.div-submit').fadeIn('slow');
 		$('.progress').fadeIn('slow');
