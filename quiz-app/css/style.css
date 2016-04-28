@@ -3,7 +3,9 @@ background: radial-gradient(ellipse at center, rgb(79, 100, 126) -45%,rgb(30, 54
 width: 100%;
 font-family:'Open Sans', sans-serif;
 }
+.container {
 
+}
 #intro	{
 
 }
@@ -88,17 +90,16 @@ h1 {
     width: 800px;
 }
 
-
-.answers1, .answers2, .answers3, .answers4 {
+.answers {
     display: none;
 }
-.answers1 li, .answers2 li, .answers3 li, .answers4 li {
+.answers li{
     display: inline-block;
     margin: auto;
     font-size: 24px;
     margin-top: 10px;
 }
-.answers1 h3, .answers2 h3, .answers3 h3,.answers4 h3{
+.answers div{
 	
     width: 130px;
     height: 130px;
@@ -112,7 +113,7 @@ h1 {
    
 }
 
-.answers1 h3:hover, .answers2 h3:hover, .answers3 h3:hover, .answers4 h3:hover{
+.answers div:hover{
 	background-color: #445155;
 	-o-transition:.5s;
   	-ms-transition:.5s;

@@ -13,8 +13,9 @@
     <div id="intro"><h1>Skyline Quiz</h1>
     <button id="start">Play Game</button>
     </div>
+        <div class="container">
         <div id="top-question">
-            <h1 id="firstQuestion">Where is this located</h1>
+            <h1 id="firstQuestion">Where is this located</h1><input type="submit" value="Continue" class="continue" id="submitButton">
             <h1 id="secondQuestion">What Country is this located</h1>
             <h1 id="thirdQuestion">Northern or Southern Hemisphere</h1>
             <h1 id="fourthQuestion">Where is this located?</h1>
@@ -26,38 +27,35 @@
         <img id="Montreal" src="http://i1.trekearth.com/photos/12078/img_5014.jpg"/>
     </div>
     <section id="main-section">
-        <ul class="answers1">
-            <li><h3 class="miami">Miami</h3></li>
-            <li><h3 class="chicago">Chicago</h3></li>
-            <li><h3 class="japan">New York</h3></li>
-            <li><h3 class="china">Houston</h3></li>
+        <ul class="answers" id='q1'>
+            <li><div class="answer">Miami</div></li>
+            <li><div class="answer">Chicago</div></li>
+            <li><div class="answer">Japan</div></li>
+            <li><div class="answer">China</div></li>
             </ul>
-        <ul class="answers2">
-            <li><h3 class="miami">Toronto</h3></li>
-            <li><h3 class="chicago">Austin</h3></li>
-            <li><h3 class="japan">Oklahoma City</h3></li>
-            <li><h3 class="china">San Antonio</h3></li>
+        <ul class="answers" id='q2'>
+            <li><div class="answer">Toronto</div></li>
+            <li><div class="answer">Austin</div></li>
+            <li><div class="answer">Oklahoma City</div></li>
+            <li><div class="answer">San Antonio</div></li>
             </ul>
-        <ul class="answers3">
-            <li><h3 class="miami">third last</h3></li>
-            <li><h3 class="chicago">Chicago</h3></li>
-            <li><h3 class="japan">New York</h3></li>
-            <li><h3 class="china">Houston</h3></li>
+        <ul class="answers" id='q3'>
+            <li><div class="answer">third last</div></li>
+            <li><div class="answer">neworleans</div></li>
+            <li><div class="answer">New York</div></li>
+            <li><div class="answer">Houston</div></li>
             </ul>
-        <ul class="answers4">
-            <li><h3 class="miami">final answers</h3></li>
-            <li><h3 class="chicago">Chicago</h3></li>
-            <li><h3 class="japan">New York</h3></li>
-            <li><h3 class="china">Houston</h3></li>
+        <ul class="answers" id='q4'>
+            <li><div class="answer">final answers</div></li>
+            <li><div class="answer">Chicago</div></li>
+            <li><div class="answer">New York</div></li>
+            <li><div class="answer">Houston</div></li>
             </ul>
     </section>
             <div class="div-submit">  
-                <button id="submit">
-                <i class="fa fa-forward" aria-hidden="true">
-                </i>
-                </button>    
-            </div>       
-            <div class="progress">
+                <button id="submit" onclick="checkAnswer"()>TEST
+                <i class="fa fa-forward" aria-hidden="true" ></i></button>    
+            </div><div class="progress">
               <ul class="progress-circle">
               <li class="1">1</li>
               <li class="2">2</li>
@@ -66,7 +64,8 @@
               
               </ul>  
             </div>
+            </div>
         <footer class="footer">copyright 2016</footer>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
