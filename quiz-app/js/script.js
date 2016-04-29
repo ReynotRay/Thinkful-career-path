@@ -41,7 +41,7 @@ function checkAnswer(question,answer){
 		console.dir($('.selectedAnswer')[0])
 		
 		var questionNumber = $('.selectedAnswer')[0].parentElement.id;
-		var questionAnswer = $('.selectedAnswer')[0].attr("name");
+		var questionAnswer = $('.selectedAnswer')[0].getAttribute("name");
 
 		checkAnswer(questionNumber,questionAnswer);
 
