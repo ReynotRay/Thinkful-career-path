@@ -48,7 +48,7 @@ h1 {
 
 }
 
-#firstQuestion, #secondQuestion, #thirdQuestion,#fourthQuestion, #fifthQuestion {
+#firstQuestion, #secondQuestion, #thirdQuestion,#fourthQuestion{
     text-align: center;
     color: white;
     font-size: 30px;
@@ -91,16 +91,12 @@ h1 {
 }
 
 .answers {
-    display: none;
 }
 .answers li{
     display: inline-block;
     margin: auto;
     font-size: 24px;
-    margin-top: 10px;
-}
-.answers div{
-	
+    margin-top: 10px;	
     width: 130px;
     height: 130px;
     background: #028F76;
@@ -110,10 +106,11 @@ h1 {
     margin: 10px;
     list-style-type: none;
     line-height: 122px;
+    cursor: pointer;
    
 }
 
-.answers div:hover{
+.answers li:hover{
 	background-color: #445155;
 	-o-transition:.5s;
   	-ms-transition:.5s;

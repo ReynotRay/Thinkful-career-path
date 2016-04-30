@@ -1,51 +1,94 @@
+var questions = [
+	{
+		photo:'',
+		answers:['Miami', 'Chicago','St.Louis', 'Topeka']
+
+
+	},
+
+	{
+		photo:'',
+		answers:['Austin','New-york','LosAngeles','Laredo']
+	}
+
+	
+
+];
+
+
+var stage = 0;
+
+
+
 
 $(document).ready(function() {
 
 	$('#start').click(function(){
-		$('#intro').hide();
-		q1Appear();
-	})
+		init();
+		question(0);
+	});
 
-	$('.answer').on('click', function(){
-		console.dir(this);
+
+	$('.answers').on('click','li', function(){
 		$('.answer').removeClass('selectedAnswer');
-		
 		$(this).addClass('selectedAnswer');
-		console.log('you clicked an answer');
-	})
+	});
+
+
+	    $('#submitButton').on('click', function () {
+
+        var questionNumber = $('.selectedAnswer')[0].parentElement.id;
+        var questionAnswer = $('.selectedAnswer').text();
+
+        checkAnswer(questionNumber, questionAnswer);
+
+    });
+
+
+
+
+
 });
-
-
 //all functions go here
-	function q1Appear(){
+	function init(){
+		$('#intro').hide();
 		$('#firstQuestion').show();
 		$('#header-image').fadeIn('slow');
 		$('#chicago').fadeIn('slow');
 		$('.div-submit').fadeIn('slow');
 		$('.progress').fadeIn('slow');
-		$('#q1').fadeIn('slow');
-	};
+		
+	}
 
 
-////checkAnswer here
-function checkAnswer(question,answer){
-	if (questionNumber == 'q1' && questionAnswer == 'chicago'){
-		console.log('you fuckin got it');
+
+
+function question(question_number) {
+	for (var i = 0; i < questions[question_number].answers.length; i++) {
+	$('.answers').append('<li class="answer">' + questions[question_number].answers[i] + '</li>');   		
 	}
 
 }
 
-//pull attribute from li was cliked on
-	$('#submitButton').on('click',function(){
-		console.log('you click submit nothing special');
-		console.dir($('.selectedAnswer')[0])
-		
+////checkAnswer here
+function checkAnswer(q,a){
+
 		var questionNumber = $('.selectedAnswer')[0].parentElement.id;
-		var questionAnswer = $('.selectedAnswer')[0].getAttribute("name");
+		var questionAnswer = $('.selectedAnswer').text();
 
-		checkAnswer(questionNumber,questionAnswer);
+	if (q == questionNumber && a == questionAnswer)
+	{
+		
+		console.log('you fuckin got it');
+		$('.answers li').remove();
+		stage++;
+		question(stage);
+	}
+	if (stage > 3){
+		console.log('Thanks for playing')
+	}
 
-	})
+}
 
 
 
