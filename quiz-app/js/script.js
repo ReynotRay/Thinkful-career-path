@@ -1,14 +1,23 @@
 var questions = [
 	{
 		photo:'',
-		answers:['Miami', 'Chicago','St.Louis', 'Topeka']
-
-
+		answers:['Miami', 'Chicago','St.Louis', 'Topeka'],
 	},
 
 	{
 		photo:'',
-		answers:['Austin','New-york','LosAngeles','Laredo']
+		answers:['Austin','New-York','LosAngeles','Laredo'],
+
+	},
+	{
+		photo:'',
+		answers:['Neveda','Neveda','los-angeles','Laredo'],
+
+	},
+	{
+		photo:'',
+		answers:['toronto','ontario','montreal','whats'],
+
 	}
 
 	
@@ -32,10 +41,12 @@ $(document).ready(function() {
 	$('.answers').on('click','li', function(){
 		$('.answer').removeClass('selectedAnswer');
 		$(this).addClass('selectedAnswer');
+		
 	});
 
 
-	    $('#submitButton').on('click', function () {
+
+	$('#submitButton').on('click', function () {
 
         var questionNumber = $('.selectedAnswer')[0].parentElement.id;
         var questionAnswer = $('.selectedAnswer').text();
@@ -57,9 +68,7 @@ $(document).ready(function() {
 		$('#chicago').fadeIn('slow');
 		$('.div-submit').fadeIn('slow');
 		$('.progress').fadeIn('slow');
-		
 	}
-
 
 
 
@@ -76,14 +85,27 @@ function checkAnswer(q,a){
 		var questionNumber = $('.selectedAnswer')[0].parentElement.id;
 		var questionAnswer = $('.selectedAnswer').text();
 
-	if (q == questionNumber && a == questionAnswer)
-	{
-		
+	if (q == questionNumber && a =='Chicago'){
 		console.log('you fuckin got it');
 		$('.answers li').remove();
 		stage++;
 		question(stage);
 	}
+
+	else if (q == questionNumber && a !== 'Chicago'){
+		console.log('wrong');
+	}
+	else if (q == questionNumber && a == 'New-York') {
+		console.log("Answer 2 - You're right!");
+	}
+	else if (q == questionNumber && a !== 'New-York'){
+		console.log("Answer 2 - wrong!");
+	
+	}
+
+
+
+
 	if (stage > 3){
 		console.log('Thanks for playing')
 	}
