@@ -13,3 +13,11 @@ add a class of green to the number
 
 
 having issue with .getAttribute
+
+
+
+1. save images locally,
+2. fixed selected answers
+3. change classes 
+4. fiz appropriate add classes 
+5.fix design
