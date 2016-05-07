@@ -1,0 +1,55 @@
+body {
+	background-image: url('http://images.freecreatives.com/wp-content/uploads/2016/03/Movie-Theater-Design-Backgrounds-1.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+* {
+     border-radius: 0 !important;
+}
+        
+ul li span {
+    display: block;
+	width: 100%;
+}       
+img {
+    display: block;
+    width: 100px;
+}
+
+.row {
+	margin-right: -15px;
+    margin-left: 352px;
+    margin-top: 500px;
+    width: 262px;
+}
+.movies {
+	    width: 326px;
+    margin: auto;
+    display: inline-flex;
+}
+.movies .movie {
+	
+}
+h1 {
+	font-size: 13px;
+}
+.well{
+        min-height: 20px;
+    text-align: center;
+    padding: 19px;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+/*how to find edit
+lets edit poster within the screen.
+
+
+
+Agenda
+key donw on enter
+fonts
+alignments
+search bar
+*/
