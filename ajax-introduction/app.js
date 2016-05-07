@@ -1,7 +1,7 @@
 $(function () {
 
 
-    $('.search-button').click(function () {
+	    $('.search-button').click(function () {
         var search = $('.search').val();
 
         $.getJSON('http://www.omdbapi.com/?s=' + search + '&r=json', function (data) {
@@ -16,5 +16,3 @@ $(function () {
 
 });
 
-
-//Title
