@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: verdana;
+    background-color: lightblue;
+    padding:50px;
+}
+h1{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+
+
+#program, #education
+{
+    width:200px;
+    height: 40px:
+}
+.program-type, .education-type {
+    display: none;
+}
+.image, .image2 {
+    display: none;
+}
