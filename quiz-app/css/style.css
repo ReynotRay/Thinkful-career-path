@@ -203,20 +203,17 @@ h1 {
     padding: 16px;
 }
 .tryagain {
-    width: 148px;
-    display: block;
-    margin: auto;
-    margin-left: 45%;
-    margin-top: 10px;
+    width: 150px;
+    margin:10px auto;
     border-radius: 10px;
-    display: none;
-    margin-bottom: 10px;
-
-
+    display:block;
 }
 .winner {
-    display: none;
+    display: block;
+    width: 500px;
+    margin: 50px auto;
 }
+
 
 .footer {
     color: white;

@@ -1,70 +1,69 @@
 $(document).ready(main);
 
-var stage = 0;
-var questions = [
-    {
-        photo: 'assets/chicago.jpeg',
-        answers: ['Miami', 'Chicago', 'St.Louis', 'Topeka'],
-        question: 'Where is this located?'
+var currentQuestion = 0;
+var questions = [{
+    photo: 'assets/chicago.jpeg',
+    answers: ['Miami', 'Chicago', 'St.Louis', 'Topeka'],
+    question: 'Where is this located?',
+    correct: 'Chicago'
 
-    },
+}, {
+    photo: 'assets/new-york.jpeg',
+    answers: ['Syracuse', 'New-York', 'Baltimore', 'Philadelphia'],
+    question: 'Which East Coast City is this?',
+    correct: 'New-York'
 
-    {
-        photo: 'assets/new-york.jpeg',
-        answers: ['Syracuse', 'New-York', 'Baltimore', 'Philadelphia'],
-        question: 'Which East Coast City is this?'
+}, {
+    photo: 'assets/los-angeles.jpeg',
+    answers: ['San Diego', 'Oakland', 'Los Angeles', 'Sacramento'],
+    question: 'Guess which California City',
+    correct: 'Los Angeles'
 
-    },
-    {
-        photo: 'assets/los-angeles.jpeg',
-        answers: ['San Diego', 'Oakland', 'Los Angeles', 'Sacramento'],
-        question: 'Guess which California City'
+}, {
+    photo: 'assets/toronto.jpeg',
+    answers: ['Toronto', 'Ontario', 'Montreal', 'Vancouver'],
+    question: 'Which Canadian city is this?',
+    correct: 'Toronto'
 
-    },
-    {
-        photo: 'assets/toronto.jpeg',
-        answers: ['Toronto', 'Ontario', 'Montreal', 'Vancouver'],
-        question: 'Which Canadian city is this?'
-
-    }
-];
-
+}];
 
 function main() {
-    $('#start').click(startOnClick);
+    $('.tryagain').hide();
+    $('#start').click(start);
     $('.answers').on('click', 'li', selectQuestion);
     $('#submitButton').on('click', submitQuestion);
+    $('.winner').hide();
 }
 
-function init() {
+function start() {
+    generateUI();
+    generateQuestion(currentQuestion);
+}
+
+function generateUI() {
     $('#intro').hide();
     $('#question_title').show();
     $('#header-image').fadeIn('slow');
     $('#chicago').fadeIn('slow');
     $('.div-submit').fadeIn('slow');
     $('.progress').fadeIn('slow');
-}
-
-function startOnClick() {
-    init();
-    cityImage(stage);
-    question(stage);
-    $('#question_title').text(questions[stage].question);
-    progress();
 
 }
 
-function progress() {
-    for (var i = 0; i < questions.length; i++) {
-        $('.progress ul').
-        append("<li>" + (i + 1) + "</li>");
-
+function generateQuestion(question_number) {
+    $('#question_title').text(questions[currentQuestion].question);
+    $('#header-image img').attr("src", questions[currentQuestion].photo);
+    for (var i = 0; i < questions[question_number].answers.length; i++) {
+        $('.answers').append('<li class="answer">' + questions[question_number].answers[i] + '</li>');
     }
-}
 
-function markCompleted() {
-    $(".progress ul li:nth-child(" + stage + ")").css('background-color', 'green');
+    if (currentQuestion === 0) {
+        for (var i = 0; i < questions.length; i++) {
+            $('.progress ul').
+            append("<li>" + (i + 1) + "</li>");
 
+        }
+    }
 }
 
 function selectQuestion() {
@@ -73,74 +72,40 @@ function selectQuestion() {
 }
 
 function submitQuestion() {
-    var selectedAnswer = $('.selectedAnswer'),
-        questionAnswer = selectedAnswer.text();
-    checkAnswer(questionAnswer);
+    checkAnswer($('.selectedAnswer').text());
 }
 
-function question(question_number) {
-    for (var i = 0; i < questions[question_number].answers.length; i++) {
-        $('.answers').append('<li class="answer">' + questions[question_number].answers[i] + '</li>');
+function checkAnswer(answer) {
+    if (answer == questions[currentQuestion].correct) {
+        correctAnswer("Answer " + (currentQuestion + 1) + " - You're right!");
+        $('.tryagain').hide();
+    } else {
+        $('.tryagain').show();
     }
 }
 
 function correctAnswer(message) {
-    stage++;
+    currentQuestion++;
     $('.answers li').remove();
-    console.log(message);
-    cityImage(stage);
-    question(stage);
-    $('#question_title').text(questions[stage].question);
+
+    if (currentQuestion === questions.length) {
+        markCompleted();
+
+    return finished();
+
+    }
+    generateQuestion(currentQuestion);
     markCompleted();
 }
-function wrongAnswer (){
-    $('.tryagain').show();
+
+function markCompleted() {
+    $(".progress ul li:nth-child(" + currentQuestion + ")").css('background-color', 'green');
 }
-function resetTryAgain(){
-    $('.tryagain').hide();
-}
-
-function removeConitnue(){
-    $('.continue').hide();
-}
-
-function winner() {
-     $('.winner'),show();
- }
-
-function cityImage() {
-    $('#header-image img').attr("src", questions[stage].photo);
-}
-
-function checkAnswer(a) {
-
-    var questionAnswer = $('.selectedAnswer').text();
-
-    if (a == 'Chicago') {
-
-        correctAnswer("Answer 1 - You're right!");
-        resetTryAgain();
-    } else if (a == 'New-York') {
-
-        correctAnswer("Answer 2 - You're right!");
-        resetTryAgain();
-    } else if (a == 'Los Angeles') {
-
-        correctAnswer("Answer 3 - You're right!");
-        resetTryAgain();
-    } else if (a == 'Toronto') {
-        
-        //$('li').css('background-color','green');
-        correctAnswer("Answer 4 - You're right!");
-        $('.tryagain').hide();
-        removeConitnue();
-        resetTryAgain();
-        winner();
-
-
-    } else {
-        wrongAnswer();
-    }
-
-
-}
+function finished(){
+   console.log('wtf');
+   $('.winner').fadeIn('slow');
+    $('#question_title').hide();
+    $('#header-image').hide();
+    $('#chicago').hide();
+    $('.div-submit').hide();
+}   
