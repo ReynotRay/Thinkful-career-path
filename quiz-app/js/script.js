@@ -5,26 +5,26 @@ var questions = [
     {
         photo: 'assets/chicago.jpeg',
         answers: ['Miami', 'Chicago', 'St.Louis', 'Topeka'],
-        question: 'GUESS THE CITY SKY LINE 1'
+        question: 'Where is this located?'
 
     },
 
     {
         photo: 'assets/new-york.jpeg',
         answers: ['Syracuse', 'New-York', 'Baltimore', 'Philadelphia'],
-        question: 'GUESS THE CITY SKY LINE 2'
+        question: 'Which East Coast City is this?'
 
     },
     {
         photo: 'assets/los-angeles.jpeg',
-        answers: ['San Diego', 'Oakland', 'Los Angeles', 'Las Vegas'],
-        question: 'GUESS THE CITY SKY LINE 3'
+        answers: ['San Diego', 'Oakland', 'Los Angeles', 'Sacramento'],
+        question: 'Guess which California City'
 
     },
     {
         photo: 'assets/toronto.jpeg',
         answers: ['Toronto', 'Ontario', 'Montreal', 'Vancouver'],
-        question: 'GUESS THE CITY SKY LINE 4'
+        question: 'Which Canadian city is this?'
 
     }
 ];
@@ -93,7 +93,20 @@ function correctAnswer(message) {
     $('#question_title').text(questions[stage].question);
     markCompleted();
 }
+function wrongAnswer (){
+    $('.tryagain').show();
+}
+function resetTryAgain(){
+    $('.tryagain').hide();
+}
 
+function removeConitnue(){
+    $('.continue').hide();
+}
+
+function winner() {
+     $('.winner'),show();
+ }
 
 function cityImage() {
     $('#header-image img').attr("src", questions[stage].photo);
@@ -106,27 +119,28 @@ function checkAnswer(a) {
     if (a == 'Chicago') {
 
         correctAnswer("Answer 1 - You're right!");
-
+        resetTryAgain();
     } else if (a == 'New-York') {
 
         correctAnswer("Answer 2 - You're right!");
-
+        resetTryAgain();
     } else if (a == 'Los Angeles') {
 
         correctAnswer("Answer 3 - You're right!");
-
+        resetTryAgain();
     } else if (a == 'Toronto') {
-
+        
+        //$('li').css('background-color','green');
         correctAnswer("Answer 4 - You're right!");
+        $('.tryagain').hide();
+        removeConitnue();
+        resetTryAgain();
+        winner();
+
 
     } else {
-
-        console.log('Wrong answer, please try again!');
-
+        wrongAnswer();
     }
 
-    if (stage > 3) {
-        console.log('Thanks for playing')
-    }
 
 }

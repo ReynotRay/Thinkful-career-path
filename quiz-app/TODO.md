@@ -1,3 +1,5 @@
-* Replace console.logs with appropriate messages for the user (e.g. h3 of class message)
-* Save all images locally to images/cities folder 
-* etc.
+alignment of try again
+background of last li dosent turn green
+need reset button
+need to remove continue button 
+winner not showing up
