@@ -90,7 +90,6 @@ function correctAnswer(message) {
 
     if (currentQuestion === questions.length) {
         markCompleted();
-
     return finished();
 
     }
@@ -102,8 +101,7 @@ function markCompleted() {
     $(".progress ul li:nth-child(" + currentQuestion + ")").css('background-color', 'green');
 }
 function finished(){
-   console.log('wtf');
-   $('.winner').fadeIn('slow');
+    $('.winner').fadeIn('slow');
     $('#question_title').hide();
     $('#header-image').hide();
     $('#chicago').hide();
