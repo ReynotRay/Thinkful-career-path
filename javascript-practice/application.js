@@ -61,8 +61,8 @@ console.log(findCharacter('b'));
 var translate = function(x) {
   var string = x.toLowerCase();
   var vowels = ["a", "e", "i", "o", "u", " "];
-  var y = "";
-  for (i = 0; i < string.length; i++) {
+  var y = " ";
+  for (var i = 0; i < string.length; i++) {
      var current = string.charAt(i); 
     if (vowels.indexOf(current) != -1)
     y = (y + (current));
@@ -81,7 +81,7 @@ var translate = function(x) {
      var length = array.length;
      var total = 1;
      for (var i = 0; i < length; i++) {
-       total += array[i];
+       total = array[i] + total;
      }
      return total;
     };
@@ -93,7 +93,7 @@ var multiply = function(array) {
   var total = 1;
     
   for (var i = 0; i < length; i++) {
-    total *= array[i];
+    total = array[i] * total;
   }
   return total;
 };
@@ -134,17 +134,11 @@ var translate = function(string){
 
 
 console.log(translate("merry christmas and happy new year"));
-translate("merry christmas and happy new year") == "god jul och gott nytt år " ? console.log("success!") : console.log("try again")
-
-
-
-
-
 
 //8 aleks 3 longest word further explaination of null and y 0 set for longest
 
 function longestWord(string) {
-    var str = string.split("");
+    var str = string.split(" ");
     var longest = 0;
     var word = null;
     str.forEach(function(str) {
@@ -168,6 +162,7 @@ var filterLongWords = function(array, int){
   }
   return longestWords;
 }
+console.log(filterLongestWords("what are we doing"));
 
 //10 Write a function charFreq() that takes a string and builds a frequency listing of the characters 
 //contained in it. Represent the frequency listing as a JavaScript object. 
