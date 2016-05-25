@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Spotify API</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-   <script type="text/javascript" src="http://api.census.gov/data/2014/acs1/variables.json"></script>
-    <script src="js/script.js"></script>
+	<title>API</title>
+   	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/custom.css">
-
 </head>
 <body>
-
+<div class="container">
+<h1>Meetup</h1>
+<div id="map"><img src="https://www.webniraj.com/wp-content/uploads/2013/05/Interactive-Google-Maps.png"></div>
+<div class="search-bar">
+<h2>We will help you locate the closest Meetup</h2>
+<input type="text" id="zip-code" placeholder="zipcode"></input>
+<button id="search">Search</button>
+<button id="geo-location">Current Location</button>
+<div class="target"></div>
+</div>
+</div>
 </body>
 </html>
