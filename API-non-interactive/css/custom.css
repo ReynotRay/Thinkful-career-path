@@ -3,15 +3,11 @@
  }
  
  h1 {
-    text-align: center;
-    line-height: 65px;
-    font-size: 30px;
-    color: orange;
-    letter-spacing: 1px;
-    background: rgb(29, 47, 90);
-    font-family: sans-serif;
-    height: 67px;
-    margin-top: 24px;
+     text-align: center;
+     font-size: 30px;
+     color: orange;
+     letter-spacing: 1px;
+     font-family: sans-serif;
  }
  
  .container {
@@ -34,10 +30,9 @@
  
  .search-bar {
      width: 100%;
-     background: rgba(0, 0, 0, 0.32);
+     /*	border-style: solid;*/
      display: inline-block;
      height: 120px;
-     margin-top: 25px;
  }
  
  h2 {
@@ -75,7 +70,6 @@
  
  #geo-location:hover {
      background: orange;
-     color:black;
      -o-transition: .5s;
      -ms-transition: .5s;
      -moz-transition: .5s;
@@ -97,7 +91,6 @@
  
  #search:hover {
      background-color: orange;
-     color:black;
      -o-transition: .5s;
      -ms-transition: .5s;
      -moz-transition: .5s;

@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>API</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
     <script src="js/script.js"></script>
+
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Find Local Meetups</h1>
-        <div id="map"></div>
+        <h1>Find Meetups</h1>
+        <div id="map"><img src="https://www.webniraj.com/wp-content/uploads/2013/05/Interactive-Google-Maps.png"></div>
         <div class="search-bar">
             <h2>We will help you locate the closest Meetup!</h2>
             <input type="text" id="zip-code" placeholder="zipcode"></input>
@@ -20,7 +23,6 @@
             <div class="target"></div>
         </div>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgKlKgrtId04zDzfIj_WkqLQ4J2jZCVUg&callback=initMap"></script>
 </body>
 
 </html>
