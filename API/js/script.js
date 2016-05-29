@@ -24,7 +24,7 @@ function initMap() {
         });
  }
 
-
+//https://api.meetup.com/find/locations?photo-host=public&sig_id=164232862&sig=2e8c97691706f42bcdc30923ca51f830447b65d7
 
 //MEETUP API key 183e4b486a5952514761c514b16755c
 
