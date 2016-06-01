@@ -28,7 +28,7 @@
 
 //MEETUP API key 183e4b486a5952514761c514b16755c
 
-$document.ready(function(){
+$(document).ready(function(){
 
 	$.get('https://api.meetup.com/2/cities' , function(data){
 
