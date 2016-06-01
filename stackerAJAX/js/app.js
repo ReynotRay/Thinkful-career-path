@@ -50,39 +50,35 @@ var showQuestion = function(question) {
 
 var showAnswerers = function(question) {
 
-    // clone our result template code
     var result = $('.templates .answerers').clone();
 
-    // Set the question properties in result
     var questionElem = result.find('.answerers-text a');
     questionElem.attr('href', question.user.link);
     questionElem.text(question.user.display_name);
     //image
-    var image = result.find('.image img'); //display image
+    var image = result.find('.image img'); 
     image.attr('src', question.user.profile_image);
 
-    // user_id
+
     var user_id = result.find('.user_id');
     user_id.text(question.user.user_id);
 
-    // user_type
+   
     var user_type = result.find('.user_type');
     user_type.text(question.user.user_type);
 
-    // reputation
+
     var reputation = result.find('.reputation');
     reputation.text(question.user.reputation);
 
-    //post count
+
     var post_count = result.find('.post_count');
     post_count.text(question.post_count);
 
-    //score
     var score = result.find('.score');
     score.text(question.score);
 
 
-    // return "<p>test</p>";
     return result;
 };
 
