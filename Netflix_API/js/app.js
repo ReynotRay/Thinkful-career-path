@@ -9,6 +9,7 @@ $(document).ready(function() {
 });
 
 var getTopAnswerers = function(answerers) {
+    //need help with passing correct parameters for Netflix roulette api
     var request = {
         tag: answerers,
         site: 'netflixroulette',
@@ -22,16 +23,13 @@ var getTopAnswerers = function(answerers) {
             type: "GET",
         })
         .done(function(result) {
-            console.log(result);
             var searchResults = showSearchResults(request.tagged, result.items.length);
-            console.log('done');
             $('.search-results').html(searchResults);
 
             $.each(result.items, function(i, item) {
                 var answer = showAnswerer(item);
-                console.log(results);
                 $('.results').append(answer);
-
+                console.log(results);
             });
         })
         .fail(function(jqXHR, error, errorThrown) {
@@ -49,13 +47,11 @@ var showAnswerer = function(answer) {
 
     var posterimage = results.find('.posterimage');
     posterimage.attr('src', answer.user.poster);
-
-    console.log('rating-inside');
     rating.text();
 
     var summary = result.find('.summary');
     summary.text(answer.summary);
-
+    console.log('test');
 }
 
 
