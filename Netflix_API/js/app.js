@@ -5,6 +5,7 @@ $(document).ready(function() {
         // get the value of the tags the user submitted
         var answerers = $(this).find("input[name='answerers']").val();
         getTopAnswerers(answerers);
+        console.log("submit");
     });
 });
 
@@ -12,9 +13,9 @@ var getTopAnswerers = function(answerers) {
     //need help with passing correct parameters for Netflix roulette api
     var request = {
         tag: answerers,
-        site: 'netflixroulette',
-        order: 'desc',
-        sort: 'creation'
+        // site: 'netflixroulette',
+        // order: 'desc',
+        // sort: 'creation'
     };
     var result = $.ajax({
             url: "http://netflixroulette.net/api/api.php?director=" + request.tag + "",
@@ -41,13 +42,16 @@ var showAnswerer = function(answer) {
     //clone our results 
     var result = $('.templates .answerers').clone();
 
-    console.log(result);
-    var rating = result.find('.rating');
-    rating.text(answer.summary);
-
+    console.log("shortAnswerDisplay");
     var posterimage = results.find('.posterimage');
     posterimage.attr('src', answer.user.poster);
     rating.text();
+
+    var rating = result.find('.rating');
+    rating.text(answer.rating);
+
+    var runtime = result.find('.runtime');
+    runtime.text(answer.runtime);
 
     var summary = result.find('.summary');
     summary.text(answer.summary);
