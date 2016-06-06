@@ -1,10 +1,9 @@
 
-@import url(https://fonts.googleapis.com/css?family=Pirata+One);
-
 body {
   background:url("pirate.jpg") 50% 50% / cover no-repeat fixed black;
-  font-family:'Pirata One';
+
   color:white;
+  font-family: sans-serif;
 }
 .container {
 	text-align: center;
@@ -18,9 +17,6 @@ body {
 	font-size: 29px;
 	list-style-type: none;
 }
-ul{
-	text-decoration: none;
- }
  #submitButton {
  	text-align: center;
  	background-color:white;

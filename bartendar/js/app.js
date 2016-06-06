@@ -1,14 +1,9 @@
-$(document).ready(function() {
-    $('#submitButton').click(function(event) {
-        event.preventDefault();
-});
-
 var questions = [
-    '1. Do ye like yer drinks strong?',
-    '2. Do ye like it with a salty tang?',
-    '3. Are ye a lubber who likes it bitter?',
-    '4. Would ye like a bit of sweetness with yer poison?',
-    '5. Are ye one for a fruity finish?',
+        '1. Do ye like yer drinks strong?',
+        '2. Do ye like it with a salty tang?',
+        '3. Are ye a lubber who likes it bitter?',
+        '4. Would ye like a bit of sweetness with yer poison?',
+        '5. Are ye one for a fruity finish?',
 ];
 
 var ingredients = {
@@ -19,22 +14,17 @@ var ingredients = {
     fruity: ['Slice of orange', 'dash of cassis', 'cherry on top']
 };
 
+$(document).ready(function() {
+    $('#submitButton').click(function(event) {
+        event.preventDefault();
+        console.log('click working');
+});
+
+//append questions with options available yes or no
   for (var i = 0; i < questions.length; i++) {
-        $('#generateQuestions').append('<li id="questions">'+ (questions[i]) +'<br>' +'<select class="input"><option value="yes">Yes</option><option value="no">No</option></select>'+'</li>');
+        $('#generateQuestions').append('<li id="questions">'+ (questions[i]) +'<br>' +
+        '<select class="input"><option value="yes">Yes</option><option value="no">No</option></select>'+'</li>');
     }
-
-
-
- // function displayIngredients {   
-    // if (questions === yes){
-        // strong();
-        // salty();
-        // bitter();
-        // sweet();
-        // fruit();
-// }
-
-
-
+    console.log(questions);
 
 });
