@@ -1,0 +1,35 @@
+
+@import url(https://fonts.googleapis.com/css?family=Pirata+One);
+
+body {
+  background-color: #656D37;
+  font-family:'Pirata One';
+  color:white;
+}
+.container {
+	text-align: center;
+}
+
+.title {
+	font-size: 3em;
+}
+
+#generateQuestions {
+	font-size: 29px;
+	list-style-type: none;
+}
+ul{
+	text-decoration: none;
+ }
+ #submitButton {
+ 	text-align: center;
+ 	background-color:white;
+ 	border-radius: 3px;
+ 	font-size: 20px;
+ 	margin-left: 32px;
+ }
+
+#submitButton:hover{
+	background-color: black;
+	color: white;
+}
