@@ -19,7 +19,6 @@ var ingredients = {
     fruity: ['Slice of orange', 'dash of cassis', 'cherry on top']
 };
 
- var generateQuestions = "";
   for (var i = 0; i < questions.length; i++) {
         $('#generateQuestions').append('<li id="questions">'+ (questions[i]) +'<br>' +'<select class="input"><option value="yes">Yes</option><option value="no">No</option></select>'+'</li>');
     }

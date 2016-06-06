@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pirata+One);
 
 body {
-  background-color: #656D37;
+  background:url("pirate.jpg") 50% 50% / cover no-repeat fixed black;
   font-family:'Pirata One';
   color:white;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 .title {
-	font-size: 3em;
+	font-size: 34px;
 }
 
 #generateQuestions {
